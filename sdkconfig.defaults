@@ -1,0 +1,9 @@
+# Переопределить некоторые значения по умолчанию, чтобы стек BT был включен
+# по умолчанию в этом примере
+#
+# BT config
+#
+CONFIG_BT_ENABLED=y
+CONFIG_BTDM_CTRL_MODE_BLE_ONLY=y
+CONFIG_BTDM_CTRL_MODE_BR_EDR_ONLY=n
+CONFIG_BTDM_CTRL_MODE_BTDM=n
