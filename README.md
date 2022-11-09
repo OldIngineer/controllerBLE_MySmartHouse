@@ -1,5 +1,5 @@
 			
-					ПРОГРАММА: controller_ble
+			ПРОГРАММА: controller_ble
 для контроллера устройства управления системы "Умный дом", соединенной с сеть с помощью интерфейса BLE.
 
 1 Вкл.\выкл. исполнительных устройств производится через посылку рекламы (адвертайзинга).
@@ -18,24 +18,11 @@
 
 	Пример: "MySmartHouse_06_258" - означает включить свет.
 	
-		2 За основу взяты примеры:
-	- работа с BLE "esp-idf/examples/bluetooth/bluedroid/ble/gatt_client";
+За основу взяты примеры:
+- работа с BLE "esp-idf/examples/bluetooth/bluedroid/ble/gatt_client";
 	
-	
-		3 Содержимое файла sdkconfig.default взято из вышеуказанного примера
+Программа контроллеров подключаемых к локальной домашней сети "Мой умный дом" через интерфейс RS485
+приведена в репозитарии: https://github.com/OldIngineer/controllerRS485_MySmartHouse
 
-	Для формирования файла конфигурации указать Pyton расположение проекта,
-	например,
-cd C:\ESP32\Project\controller_ble
-
-	Задать чип ESP32 в качестве объекта для компилирования
-idf.py set-target esp32
-
-	Изменение тактовой частоты MIN 80MHz командой для компилятора:
-"idf.py menuconfig" в настройках таблицы: component config/ESP_specific/
-
-	Использование только одного ядра "PRO_CPU" командой для компилятора:
-"idf.py menuconfig" в настройках таблицы:
-component config/FreeRTOS/Run FreeRTOS only on first core
-	
-   
+Программа устройства управляющего локальной сетью (телефон) приведена в репозитарии:
+https://github.com/OldIngineer/MySmartHouse2
